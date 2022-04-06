@@ -4410,10 +4410,9 @@ react-native-linear-gradient@^2.5.6:
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
-react-native-really-awesome-button@^1.6.0:
+"react-native-really-awesome-button@git+https://github.com/PlayerProgramming/react-native-really-awesome-button":
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-native-really-awesome-button/-/react-native-really-awesome-button-1.6.0.tgz#71700f960aa6d419058beff177c7b6cf18694ef7"
-  integrity sha512-Lar69MRWnCqO0CgOIk/s63P3bS0xKqeMi/m8TDul14tRkYuOW55ZaF4pBeL13GodI+3Cw0dbihwighsQ+obXSA==
+  resolved "git+https://github.com/PlayerProgramming/react-native-really-awesome-button#e031bfa078a3b16b0c53232db0d2215264f5a9ca"
 
 react-native-web@0.17.1:
   version "0.17.1"

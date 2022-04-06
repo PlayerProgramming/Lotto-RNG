@@ -135,13 +135,6 @@ export default function Lottopage() {
     );
 }
 
-function fontSizeChange(size) {
-  if (Platform.OS === "ios" || Platform.OS === "android") {
-    return size - 21;
-  } else {
-    return size;
-  }
-}
 function buttonsizeChange() {
   if (Platform.OS === "ios" || Platform.OS === "android") {
     return 300;
