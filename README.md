@@ -8,7 +8,7 @@ Small React Native project for mobile and web app to display 7 random numbers by
 ## How to check the app out
 ### 1. Using Expo Go app
 #### (Due to iOS policy, **only Android is available** using the link)
-1. Go to "https://expo.dev/@playerprogramming/HenryPortfolio?serviceType=classic&distribution=expo-go"
+1. Go to "https://expo.dev/@playerprogramming/lotto-rng"
 2. Scan the QR code on the page using the 'camera app' or 'Expo app' and it would be ready to go.
 
 ### 2. Locally
