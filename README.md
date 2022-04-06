@@ -18,7 +18,7 @@ Small React Native project for mobile and web app to display 7 random numbers by
 
   
   
-#### Recommened using method 1, you can always turn on the app no matter if internet is connected or not conneceted.
+#### Recommened using method 1, you can always turn on the app no matter if the internet is connected or not conneceted.
 #### => Able to write down the numbers that are randomly generated.
 -----
 ## Example to save your time
