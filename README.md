@@ -1,7 +1,7 @@
 # Lotto-RNG
 
 ## Introduction
-Small React Native project for mobile and web app to display 7 random numbers by using a not-so special algorithms to increase (may be not) your winning possibility.
+Small React Native project for mobile and web app to display 7 random numbers by using a not-so special algorithms to increase (maybe not) your winning possibility.
 ( Both mobile and web version optimized )
 
 
