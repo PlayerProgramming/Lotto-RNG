@@ -6,14 +6,12 @@ import {
   SafeAreaView,
   Platform,
   Image,
-  StatusBar,
 } from "react-native";
 import { Lobster_400Regular, useFonts } from "@expo-google-fonts/lobster";
 import { LinearGradient } from "expo-linear-gradient";
 import AwesomeButton from "react-native-really-awesome-button";
 import styles from "./Styles";
 export default function Lottopage() {
-  const [myNumbers, setNumbers] = useState([]);
   const [minVal, setMinVal] = useState(1);
   const [maxVal, setMaxVal] = useState(50);
   var numbers = [];

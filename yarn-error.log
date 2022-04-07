@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin/node /Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin/yarnpkg add expo-font@~10.0.4 @expo-google-fonts/Lobster
+  /Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin/node /Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin/yarn install
 
 PATH: 
   /Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/juhyeongkang/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -14,17 +14,12 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@expo-google-fonts%2fLobster: Not found
-      at Request.params.callback [as _callback] (/Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:67029:18)
-      at Request.self.callback (/Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:140883:22)
-      at Request.emit (node:events:390:28)
-      at Request.<anonymous> (/Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:141855:10)
-      at Request.emit (node:events:390:28)
-      at IncomingMessage.<anonymous> (/Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:141777:12)
-      at Object.onceWrapper (node:events:509:28)
-      at IncomingMessage.emit (node:events:402:35)
-      at endReadableNT (node:internal/streams/readable:1343:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  SyntaxError: /Users/juhyeongkang/Hyoung/ReactNative/LottoAutoGenerator/package.json: Unexpected token / in JSON at position 621
+      at JSON.parse (<anonymous>)
+      at /Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/juhyeongkang/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -39,14 +34,17 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@expo-google-fonts/lobster": "^0.2.2",
       "expo": "~44.0.0",
       "expo-font": "~10.0.4",
       "expo-linear-gradient": "~11.0.3",
       "expo-status-bar": "~1.2.0",
+      "expo-updates": "~0.11.6",
       "react": "17.0.1",
       "react-dom": "17.0.1",
       "react-native": "0.64.3",
       "react-native-linear-gradient": "^2.5.6",
+      // "react-native-really-awesome-button": "git+https://github.com/PlayerProgramming/react-native-really-awesome-button",
       "react-native-really-awesome-button": "^1.6.0",
       "react-native-web": "0.17.1"
     },
@@ -1122,6 +1120,11 @@ Lockfile:
     dependencies:
       exec-sh "^0.3.2"
       minimist "^1.2.0"
+  
+  "@expo-google-fonts/lobster@^0.2.2":
+    version "0.2.2"
+    resolved "https://registry.yarnpkg.com/@expo-google-fonts/lobster/-/lobster-0.2.2.tgz#8f3b5151f2e38031152d8fb242cad681f64d35ae"
+    integrity sha512-1GYR9pxBUkPCejijESrqSYC0GYLz+kW7hZQDDJ0L7g3P+ghHmYidE9NVqdiUbB6fWJKIgkVIXqFz0ZXIagCkBA==
   
   "@expo/config-plugins@4.0.18", "@expo/config-plugins@^4.0.2":
     version "4.0.18"
@@ -2544,6 +2547,11 @@ Lockfile:
     dependencies:
       fontfaceobserver "^2.1.0"
   
+  expo-json-utils@~0.2.0:
+    version "0.2.1"
+    resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.2.1.tgz#a8d15181e361f3fc782d5241ce381851bab4465b"
+    integrity sha512-wU7gXGtaUlyxFLTp5e3PbnJB90/92r6gEc2BuMHdqE0OxhTQKyKzRszk2szCsdkeI7L4XntvZhCs1Px+gL1gvA==
+  
   expo-keep-awake@~10.0.2:
     version "10.0.2"
     resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.0.2.tgz#706bda839782bb3e8ad4cbe43bde471a56368813"
@@ -2553,6 +2561,13 @@ Lockfile:
     version "11.0.3"
     resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-11.0.3.tgz#bc559b9a251c9dc8aa37fb6c66c7a497fe92993c"
     integrity sha512-LuzTM5+iEHCQfC2TBHAAI+ZjPvf0TvGiA7GYMsyTnakGA2r4JtsV8Ah/miQPKhfG06jLDOo4grUoSMGqbmSrEw==
+  
+  expo-manifests@~0.2.2:
+    version "0.2.4"
+    resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.2.4.tgz#28aa7a0b21d8b932e1a49c836cfc31b5a9cd1f9c"
+    integrity sha512-8PrMPyvElKXflYd1ApDHJR9JF0SR996iVEVQgHAMLzVP7OqEAM6dQaFeqrRqVn/DSsxEWkJTpxv8WJ5NWrT4Lg==
+    dependencies:
+      expo-json-utils "~0.2.0"
   
   expo-modules-autolinking@0.5.5:
     version "0.5.5"
@@ -2577,6 +2592,31 @@ Lockfile:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.2.0.tgz#16e73205da563f9536f562e439081e30e318a82e"
     integrity sha512-pVZZ/kDCXFK79E4dCtRecs3XLC8aiwlciutSd/fFmUPJSQZ1Txia6hlKajPt0GAYft8/YnT0V3URXzWZOBniYQ==
+  
+  expo-structured-headers@~2.1.0:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-2.1.1.tgz#bdbf8752af36c7d3203540476af55562546b6aeb"
+    integrity sha512-0up4sfHHsiK2YLpTwD/ssUD2oeSGzVUeARnu/itKAJO4zHqjpc+m8N1s7HPSJcdC7fdDpMjzcdrDasT0o+cOAw==
+  
+  expo-updates-interface@~0.5.0:
+    version "0.5.1"
+    resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.5.1.tgz#b390622f60b353bb352def895a32dc800a21a4dc"
+    integrity sha512-RLvC69o1BkhHP6hNaWiIvSiTgXABB9v4HnoietoXKFHlAyxlQCupy6ki164KpZNrOS/PFJ2WWqZOvKfiyDVO+w==
+  
+  expo-updates@~0.11.6:
+    version "0.11.6"
+    resolved "https://registry.yarnpkg.com/expo-updates/-/expo-updates-0.11.6.tgz#5541f2f791d51cd51c4a37a3e241c8d167226d2d"
+    integrity sha512-nTzEc/z0/QHwu6gJhYSh5TWDSzNLO9bmtP4aQzStfqT8RRoh1bYRomszxjc7e3CsZT8xrG88XKlZ4iKL6zHLoQ==
+    dependencies:
+      "@expo/config" "^6.0.6"
+      "@expo/config-plugins" "^4.0.2"
+      "@expo/metro-config" "~0.2.6"
+      expo-manifests "~0.2.2"
+      expo-structured-headers "~2.1.0"
+      expo-updates-interface "~0.5.0"
+      fbemitter "^2.1.1"
+      resolve-from "^5.0.0"
+      uuid "^3.4.0"
   
   expo@~44.0.0:
     version "44.0.6"
@@ -4467,10 +4507,9 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
     integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
   
-  react-native-really-awesome-button@^1.6.0:
+  "react-native-really-awesome-button@git+https://github.com/PlayerProgramming/react-native-really-awesome-button":
     version "1.6.0"
-    resolved "https://registry.yarnpkg.com/react-native-really-awesome-button/-/react-native-really-awesome-button-1.6.0.tgz#71700f960aa6d419058beff177c7b6cf18694ef7"
-    integrity sha512-Lar69MRWnCqO0CgOIk/s63P3bS0xKqeMi/m8TDul14tRkYuOW55ZaF4pBeL13GodI+3Cw0dbihwighsQ+obXSA==
+    resolved "git+https://github.com/PlayerProgramming/react-native-really-awesome-button#e031bfa078a3b16b0c53232db0d2215264f5a9ca"
   
   react-native-web@0.17.1:
     version "0.17.1"
