@@ -21,9 +21,6 @@ Small React Native project for mobile and web app to display 7 random numbers by
 3. Enter "i" for iOS or "a" for Android and "w" for Web app, or scan the QR code on the console to check it out on your own device.
 
   
-  
-#### Recommened using method 1, you can always turn on the app no matter if the internet is connected or not conneceted.
-#### => Able to write down the numbers that are randomly generated.
 -----
 ## Example to save your time
 
