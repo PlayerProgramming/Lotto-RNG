@@ -8,7 +8,7 @@ Small React Native project for mobile and web app to display 7 random numbers by
 ## How to check the app out
 
 ### 1. Using Website
-1. Go to "https://lottorng.vercel.app/"
+1. Go to "https://hjk-lottorng.vercel.app/"
 2. Enjoy...!
 ### 2. Using Expo Go app
 #### (Due to iOS policy, **only Android is available** using the link)
